@@ -28,7 +28,7 @@ public class SwapFirstLastchar {
 				char temp=word.charAt(0);
 				a[0]=a[a.length-1];
 				a[a.length-1]=temp;
-				String reversedStr=new String(a);
+				String reversedStr=new String(a);				
 				revword=revword+reversedStr;
 			}
 			rev=rev+revword;

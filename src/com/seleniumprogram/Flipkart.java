@@ -137,6 +137,7 @@ public class Flipkart {
 	    		s1.selectByIndex(size-1);
 	    		
 	    		
+	    		
 	    		// taking screensht
 	    		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	    		 FileUtils.copyFile(screenshotFile, new File("D:\\MyProgram\\payment.png"));

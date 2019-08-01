@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ng.NewTest">
+      <class name="com.ng.DependsonMethod">
         <methods>
-          <include name="f"/>
+          <include name="testDivide"/>
+          <include name="testProcessRealNumbers"/>
+          <include name="testAdd"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.ng.NewTest -->
+      </class> <!-- com.ng.DependsonMethod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

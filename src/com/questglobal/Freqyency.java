@@ -28,8 +28,8 @@ public class Freqyency {
 					
 
 			}
-			System.out.println(element);
-			System.out.println(count);
+			//System.out.println(element);
+			//System.out.println(count);
 			
 		}
 		System.out.println(element);

@@ -3,7 +3,7 @@ package com.lendingkart;
 public class Searchastring {
 	
 	int searching(String s, String search){
-		System.out.println(s.lastIndexOf('n',150)); // nuvizz employee Gayatri
+		//System.out.println(s.lastIndexOf('n',150)); // nuvizz employee Gayatri
 		int a=s.length();
 		int b=search.length();
 		for(int i=0; i<a; i++){

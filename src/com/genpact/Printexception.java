@@ -6,7 +6,10 @@ public class Printexception {
 	public static void main(String[] args) {
 		try{
 			System.out.println("1");
+			//System.out.println(s.length());
+			
 			int i=s.length();
+			
 			System.out.println(s.charAt(i));
 			System.out.println("2");
 		}

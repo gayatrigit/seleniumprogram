@@ -39,9 +39,11 @@ public class Alloption_dropdown {
 			
 			// Sorting ArrayList in ascending Order using Collection.sort() method 
 	        Collections.sort(countryList); 
+	        Collections.reverse(countryList);
 	  
-	        // Print the sorted ArrayList 
-	        System.out.println("Sorted ArrayList in Ascending order : " + countryList); 
+	        // Print the sorted ArrayList
+	        for(int i=0;i<countryList.size();i++)
+	        System.out.println("Sorted ArrayList in Ascending order : " +countryList.get(i)); 
 	}
 
 }

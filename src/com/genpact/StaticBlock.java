@@ -1,11 +1,11 @@
 package com.genpact;
 
-public class Static {
+public class StaticBlock {
 	static
 	{
 		System.out.println("one");
 	}
-	Static()
+	StaticBlock()
 	{
 	System.out.println("two");
 	}
@@ -13,7 +13,7 @@ public class Static {
 
 	public static void main(String[] args) {
 		System.out.println("three");
-		Static s1=new Static();
+		StaticBlock s1=new StaticBlock();
 		System.out.println("four");
 		{
 			System.out.println("five");

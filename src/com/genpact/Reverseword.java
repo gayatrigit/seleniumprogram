@@ -23,6 +23,7 @@ public class Reverseword {
 	public static void main(String[] args) {
 		Reverseword w=new Reverseword();
 		w.wordreverse("Welcome to nuvizz");
+		// nuvizz to Welcome
 
 	}
 
