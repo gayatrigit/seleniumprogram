@@ -1,12 +1,25 @@
 package com.ng;
 
 import org.testng.Assert;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+ class Calculator {
+	 
+    public static int add(int a, int b){
+        return a+b;
+    }
  
-public class DependsonMethod {
+    public static int divide(int a, int b){
+        return a/b;
+    }
+ 
+}
+
+ 
+ class DependsonMethod {
  
     @BeforeMethod
     public void beforeMethod() {
@@ -21,15 +34,14 @@ public class DependsonMethod {
     @Test(invocationCount=2)
     public void testAdd() {
         System.out.println("testAdd()");
-        Calculator calculator = new Calculator();
-        Assert.assertEquals(calculator.add(15, 2) , 17);
+       Assert.assertEquals(Calculator.add(15, 2) , 17);
     }
  
     @Test
     public void testDivide() {
         System.out.println("testDivide()");
         Calculator calculator = new Calculator();
-        Assert.assertEquals(calculator.divide(16, 0), 16);
+        Assert.assertEquals(Calculator.divide(16, 0), 16);
     }
      
     @Test(dependsOnMethods={"testAdd","testDivide"})

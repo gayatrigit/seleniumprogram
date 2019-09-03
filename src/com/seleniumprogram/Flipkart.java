@@ -29,7 +29,7 @@ public class Flipkart {
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		List<WebElement> lis=driver.findElements(By.xpath("//*"));
 		int i=lis.size();
 		String s=lis.get(1).getText();
@@ -53,8 +53,7 @@ public class Flipkart {
 		System.out.println("Go to oppo");
 		
 		// Scroll till the element found
-		JavascriptExecutor Js=(JavascriptExecutor)driver;
-	
+			
 		System.out.println("thread1");
 		Thread.sleep(3000);
 		WebElement e1=driver.findElement(By.xpath("//a[contains(text(),'OPPO A83 (2018 Edition) (Red, 64 GB)')]"));
@@ -63,9 +62,12 @@ public class Flipkart {
 		int y1=e1.getLocation().getY();
 		JavascriptExecutor j=(JavascriptExecutor) driver;
 		j.executeScript("window.scrollBy("+x1+","+y1+")");
-		j.executeScript("window.scrollBy(0,-100)");
+		j.executeScript("window.scrollBy(0,-100)");  //moving up
+		j.executeScript("window.scrollBy(0,100)"); //moving down
+		j.executeScript("window.scrollBy(-10,0)"); //moving right
+		j.executeScript("window.scrollBy(10,0)");//moing left
 		Thread.sleep(3000);
-		//Js.executeScript("arguments[0].scrollIntoView();", e1);
+		j.executeScript("arguments[0].scrollIntoView();", e1);
 	    System.out.println("scroll till element found");
 	   
 	

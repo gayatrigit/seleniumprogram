@@ -6,9 +6,9 @@
       <class name="com.ng.DependsonMethod">
         <methods>
           <include name="testDivide"/>
+          <include name="testProcessEvenNumbers"/>
           <include name="testProcessRealNumbers"/>
           <include name="testAdd"/>
-          <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.ng.DependsonMethod -->

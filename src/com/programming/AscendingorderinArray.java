@@ -4,7 +4,7 @@ public class AscendingorderinArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a[]={70,50,30,60};
+		int a[]={11,3,70,50,10,60};
 		for(int i=0;i<a.length;i++)
 		{
 			for(int j=i+1; j<a.length;j++)
@@ -22,8 +22,8 @@ public class AscendingorderinArray {
 			System.out.println(a[i]);
 			} 
 		
-		System.out.println("Highest number" +a[0]);
-		System.out.println("secnd highest number" +a[1]);
+		System.out.println("lowest number " +a[0]);
+		System.out.println("secnd lowest number " +a[1]);
 	}
 
 }

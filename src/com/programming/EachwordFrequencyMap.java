@@ -25,3 +25,6 @@ public class EachwordFrequencyMap {
 	}
 
 }
+
+//o/p- {charchi=2, gayatri=3, Tanvi=1}
+

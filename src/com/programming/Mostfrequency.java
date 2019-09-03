@@ -11,9 +11,11 @@ public class Mostfrequency {
 			int tempelement=a[i];
 			int tempcount=0;
 			for(int j=0; j<a.length; j++)
+			{
 			
 				if(a[j] == tempelement)
 					tempcount ++;
+			}
 				if(tempcount>count)
 				{
 					element=tempelement;
