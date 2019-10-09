@@ -18,7 +18,7 @@ public class RemoveDuplicateInSameArray {
 				j++;
 			}
 		}
-		a[j]=a[a.length-1];
+		a[j]=a[a.length];
 		for(int i=0;i<j+1;i++)
 		{
 			System.out.print(a[i]);
