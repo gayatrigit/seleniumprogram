@@ -20,7 +20,7 @@ public class Primepallendrom
 
 			if(count<2) 
 			{
-				//System.out.println("number is  prime " +j);
+				System.out.println("number is  prime " +j);
 
 				int rev=0;
 				int m=j;
